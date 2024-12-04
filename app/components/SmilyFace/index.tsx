@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { arc,line } from "d3";
+import { arc } from "d3";
 
 const width = 960;
 const height = 500;
@@ -20,23 +20,23 @@ const mouthRadius = 140;
 
 
   // Create a D3 line generator
-  const lineGenerator = line()
-    .x(d => d[0])
-    .y(d => d[1]);
+  // const lineGenerator = line()
+  //   .x(d => d[0])
+  //   .y(d => d[1]);
 
   // Calculate the x-coordinates of the mouth's endpoints
-  const mouthStartX = mouthRadius * Math.cos(Math.PI / 2);
-  const mouthEndX = mouthRadius * Math.cos((Math.PI * 3) / 2);
+  // const mouthStartX = mouthRadius * Math.cos(Math.PI / 2);
+  // const mouthEndX = mouthRadius * Math.cos((Math.PI * 3) / 2);
 
   // Define the line's coordinates
-  const lineData = [
-    [mouthStartX, -mouthRadius],
-    [mouthEndX, -mouthRadius]
-  ];
+  // const lineData = [
+  //   [mouthStartX, -mouthRadius],
+  //   [mouthEndX, -mouthRadius]
+  // ];
 
   // Generate the line path
-  const linePath = lineGenerator(lineData);
-export const SmilyFace = () => {
+  // const linePath = lineGenerator(lineData);
+export const SmileyFace = () => {
   const mouth =
     mouthArc({
       innerRadius: mouthRadius,
@@ -92,7 +92,7 @@ export const SmilyFace = () => {
           <path d={mouth} />
           
            {/* Horizontal line above the mouth */}
-           <path d={linePath} stroke="black" strokeWidth={strokeWidth} />
+           {/* <path d={linePath} stroke="black" strokeWidth={strokeWidth} /> */}
         </g>
 
         

@@ -1,6 +1,6 @@
 
 import Barchart from "../components/Barchart";
-import { SmilyFace } from "../components/SmilyFace";
+import { SmileyFace } from "../components/SmilyFace";
 
 export default function Charting() {
   return (
@@ -9,7 +9,7 @@ export default function Charting() {
         <h5>Problems</h5>
       </header>
       <div>
-        <SmilyFace/>
+        <SmileyFace/>
       </div>
       <div>
         <Barchart/>
