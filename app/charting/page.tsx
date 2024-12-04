@@ -6,7 +6,7 @@ export default function Charting() {
   return (
     <div>
       <header className="text-center text-3xl py-4 font-bold">
-        <h5>Problems</h5>
+        <h5>Problems Solved</h5>
       </header>
       <div>
         <SmileyFace/>
