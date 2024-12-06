@@ -1,7 +1,7 @@
 import { TQuestionDetails } from "../types";
 
 
-export const QuestionContainer = ({ question, examples }: TQuestionDetails) => {
+export const QuestionContainer = ({ question, examples }: Pick<TQuestionDetails,'question'|'examples'>) => {
     return (
       <div className="bg-gray-100/20 p-4 rounded">
         <div className="bg-gray-500/70 p-2 rounded">

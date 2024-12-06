@@ -16,8 +16,9 @@ export const RevealCode = ({ callback }: RevealCodeProps) => {
         {revealCode && (
           <div className="bg-black/25 p-4 my-2 rounded">
             <pre>
-              function {callback.name}
-              <code className="javascript">{callback.toString()}</code>
+              
+              <code className="javascript">const {callback.name}=
+                {callback.toString()}</code>
             </pre>
           </div>
         )}

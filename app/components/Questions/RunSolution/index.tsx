@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from "../../Button";
 import { TQuestionDetails } from "../types";
 
-export const RunSolution = ({ examples, callback }: TQuestionDetails) => {
+export const RunSolution = ({ examples, callback }: Pick<TQuestionDetails,'callback'|'examples'>) => {
     const [answer, setAnswer] = useState<string | null>(null);
     const getAnswer = (answer: unknown) => {
       setAnswer(String(answer));

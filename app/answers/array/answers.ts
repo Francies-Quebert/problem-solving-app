@@ -7,4 +7,14 @@ const hasDuplicate = (nums: number[]) => {
   return false;
 };
 
-export { hasDuplicate };
+const isAnagram = (s: string, t: string) => {
+  if (s.length !== t.length) {
+    return false;
+  }
+
+  const sSort = s.split("").sort().join();
+  const tSort = t.split("").sort().join();
+  return sSort == tSort;
+};
+
+export { hasDuplicate, isAnagram };
